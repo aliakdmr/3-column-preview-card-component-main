@@ -347,8 +347,100 @@
   [hidden] {
     display: none;
   }
-
-.card-container{
+  @media screen and (max-width: 930px){
+    .card-container{
+        display: flex;
+        flex-direction: column;
+        width: 36%;
+    margin-top: 5vw;
+    margin-left: 32%;
+    height: 150vw;
+    }    
+    .card-sedan{
+      width: 100%;
+      height: 35vw;
+      background-color: hsl(31, 77%, 52%);
+      border-radius: 0.732vw 0.732vw 0vw 0vw;
+      height: calc(100%/3);
+  }
+  .card-suv{
+      width: 100%;
+      height: 35vw;
+      background-color: hsl(184, 100%, 22%);
+      border-radius: 0vw 0vw 0vw 0vw;
+      height: calc(100%/3);
+  }
+  .card-luxury{
+      width: 100%;
+      height: 35vw;
+      background-color: hsl(179, 100%, 13%);
+      border-radius: 0vw 0vw 0.732vw 0.732vw;
+      height: calc(100%/3);
+  }
+  .car-icon{
+      position: relative;
+      margin-left: 15%;
+      width: 5vw;
+      height: 3.5vw;
+      margin-top: 4vw;
+  }
+  .car-title{
+      position: relative;
+      margin-left: 15%;
+      margin-top: 2vw;
+      color: #fff;
+      font-size: 2.928vw;
+      font-weight: 700;
+      text-transform: uppercase;
+      font-family: 'Big Shoulders Display', cursive;
+  }
+  
+  .car-text{
+      position: relative;
+      margin-left: 15%;
+      width: 70%;
+      margin-top: 2vw;
+      color: rgba(255, 255, 255, 0.6);
+      font-size: 1.988vw;
+      letter-spacing: 0.1vw;
+      font-family: 'Lexend Deca', sans-serif;
+      font-weight: 400;
+  }
+  
+  .car-button{
+      width: 50%;
+      height: 4vw;
+      border: #fff 0.073vw solid;
+       border-radius: 2vw;
+       margin-left: 15%;
+       margin-top: 4vw;
+            color: transparent;
+       background-color: #fff;
+       font-family: 'Lexend Deca', sans-serif;
+       font-weight: normal;
+       cursor: pointer;
+       font-size: 1.988vw;
+  }
+  .car-button:hover{
+    width: 50%;
+     height: 4vw;
+     border: #fff 0.073vw solid;
+      border-radius: 2vw;
+      margin-left: 15%;
+      margin-top: 4vw;
+      background-color: transparent;
+      color: #fff !important;
+      font-family: 'Lexend Deca', sans-serif;
+      font-weight: normal;
+      cursor: pointer;
+      font-size: 1.988vw;
+  }
+  .attribution{
+    font-size: 1.988vw;
+  }
+}
+@media screen and (min-width: 930px){
+  .card-container{
     width: 60%;
     margin-top: 5vw;
     margin-left: 20%;
@@ -356,22 +448,22 @@
     flex-direction: row;
 }
 .card-sedan{
-    width: calc(100%/3);
+    width: 100%;
     height: 35vw;
     background-color: hsl(31, 77%, 52%);
-    border-radius: 10px 0px 0px 10px;
+    border-radius: 0.732vw 0vw 0vw 0.732vw;
 }
 .card-suv{
-    width: calc(100%/3);
+    width: 100%;
     height: 35vw;
     background-color: hsl(184, 100%, 22%);
-    border-radius: 00px 0px 0px 0px;
+    border-radius: 0vw 0vw 0vw 0vw;
 }
 .card-luxury{
-    width: calc(100%/3);
+    width: 100%;
     height: 35vw;
     background-color: hsl(179, 100%, 13%);
-    border-radius: 00px 10px 10px 0px;
+    border-radius: 0vw 0.732vw 0.732vw 0vw;
 }
 .car-icon{
     position: relative;
@@ -385,7 +477,7 @@
     margin-left: 15%;
     margin-top: 2vw;
     color: #fff;
-    font-size: 40px;
+    font-size: 2.928vw;
     font-weight: 700;
     text-transform: uppercase;
     font-family: 'Big Shoulders Display', cursive;
@@ -397,8 +489,41 @@
     width: 70%;
     margin-top: 2vw;
     color: rgba(255, 255, 255, 0.6);
-    font-size: 13.50px;
+    font-size: 0.988vw;
     letter-spacing: 0.1vw;
     font-family: 'Lexend Deca', sans-serif;
     font-weight: 400;
+}
+
+.car-button{
+    width: 50%;
+    height: 4vw;
+    border: #fff 0.073vw solid;
+     border-radius: 2vw;
+     margin-left: 15%;
+     margin-top: 4vw;
+          color: transparent;
+     background-color: #fff;
+     font-family: 'Lexend Deca', sans-serif;
+     font-weight: normal;
+     cursor: pointer;
+     font-size: 0.988vw;
+}
+.car-button:hover{
+  width: 50%;
+   height: 4vw;
+   border: #fff 0.073vw solid;
+    border-radius: 2vw;
+    margin-left: 15%;
+    margin-top: 4vw;
+    background-color: transparent;
+    color: #fff !important;
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: normal;
+    cursor: pointer;
+    font-size: 0.988vw;
+}
+.attribution{
+  font-size: 0.988vw;
+}
 }
